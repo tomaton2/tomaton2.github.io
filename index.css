@@ -12,12 +12,17 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(174, 121, 20);
+    color: rgb(240, 225, 199);
     font-weight: bold;
 }
 
+hr{
+    border-width: 5px;
+    border-color: rgb(121, 89, 1);
+}
+
 header {
-    background-color: white;
+    background-color: rgba(76, 51, 19, 0.651);
     margin-bottom: 20px;
 }
 
@@ -41,7 +46,7 @@ header {
 }
 
 .carousel-caption {
-    background-color: rgba(43, 35, 3, 0.747);
+    background-color: rgba(251, 239, 175, 0.747);
     border-radius: 5%;
     padding: 0;
 }
@@ -54,11 +59,13 @@ h4 {
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
+    color: rgb(135, 88, 0);
 
 }
 
 .blockquote {
     text-align: center;
+    font-weight: 500;
     font-style: italic;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -75,7 +82,8 @@ h4 {
 
     div.logo-1 {
         position: relative;
-        
+
     }
 
 }
+

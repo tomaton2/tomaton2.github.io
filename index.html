@@ -7,18 +7,22 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css"> <!--1.b-->
+    <!--1.b) Link à index.css -->
+    <link rel="stylesheet" href="index.css">
+    <!--1.a) Bootstrap's CSS and JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <!--2.a. Element header avec la class "container" pour contenir les lignes et colonnes -->
     <header class="header container">
-        <!--2.a. Element header avec la class "container" pour contenir les lignes et colonnes -->
+        <!--2.a. Element div avec la class "row" pour definir une ligne et contenir les colonnes -->
         <div class="row">
 
             <!--LOGO-->
 
+            <!--2.a. Class "col" pour definir une colonne, "sm" pour que les div soient empilés <576px et "3" pour que la colonne ocuppe 3/12 colonnes établies par Bookstrap -->
             <div class="logo-1 col-sm-2">
 
                 <img src="images/logo.png" alt="logo" class="logo-1">
@@ -28,10 +32,10 @@
 
             <!--NAVBAR-->
 
-
+            <!--2.a. Le même avec un element nav pour definir la barre de navigation-->
             <nav class="navbar col-sm-8">
                 <div class="container">
-                    <!--2.a. Class "col" pour definir une colonne, "sm" pour que les div soient empilés <576px et "3" pour que la colonne ocuppe 3/12 colonnes établies par Bookstrap -->
+
                     <div class="nav-section col-4"><a href="#recetas">
                             <p>Recetas</p>
                         </a></div>
@@ -48,7 +52,7 @@
             <!--8) Ms-md-auto est employé pour introduir un marge à gauche de la colonne pour un afichage sur un écran moyen (p.e. tablet).-->
             <div class="social-media col-sm-2 ms-md-5">
 
-                <!--6) Icons-->
+                <!--6) Icones Bootstrap-->
                 <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
                 <a href="https://www.linkedin.com/feed/" target="_blank"><i class="bi bi-linkedin"></i></a>
@@ -57,6 +61,7 @@
     </header>
 
     <!--Carousel-->
+    <!--4. Pour que la page soit claire, j'ai decidé creer un container apart qui contient le carousel-->
     <div class="header-content container">
         <div class="carousel slide" id="carousel1" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -93,30 +98,34 @@
     </div>
 
     <!--Recetas-->
+
+    <!--3. Pour que la page soit claire, j'ai decidé creer un container apart qui contient 2 cards en 2 colonnes diferentes-->
     <section id="recetas" class="recetas container">
         <h2>RECETAS</h2>
         <hr>
         <div class="row">
             <div class="col">
-                <a href="">
+                <a href="#">
                     <div class="card">
-                        <img class="card-img-bottom" src="images/brownie.jpeg" alt="ciel">
+                        <!--3. Img cap: J'ai mis la class card-img-top pour que l'image soit en desus du text-->
+                        <img class="card-img-top" src="images/brownie.jpeg" alt="Brownies">
                         <div class="card-body">
                             <h3 class="card-title">Brownies</h3>
-                            <p>Con sabor a chocolate y acompañados con helado de vainilla.</p>
-                            <p>Se te hará la boca agua.</p>
+                            <p class="card-text">Con sabor a chocolate y acompañados con helado de vainilla.</p>
+                            <p class="card-text">Se te hará la boca agua.</p>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col">
-                <a href="">
+                <a href="#">
                     <div class="card">
-                        <img class="card-img-bottom" src="images/cupcake.jpeg" alt="ciel">
+                        <!--3. Img cap: J'ai mis la class "card-img-top" pour que l'image soit en desus du text-->
+                        <img class="card-img-top" src="images/cupcake.jpeg" alt="cupcakes">
                         <div class="card-body">
                             <h3 class="card-title">Cupcakes</h3>
-                            <p>Tres cupcakes diferentes:</p>
-                            <ul>
+                            <p class="card-text">Tres cupcakes diferentes:</p>
+                            <ul class="card-text">
                                 <li>Chocolate</li>
                                 <li>Pistacho</li>
                                 <li>Vainilla</li>
@@ -129,7 +138,7 @@
     </section>
 
 
-    <!--7) Blockquote-->
+    <!--7) Citation blockquote-->
     <section class="blockquote container">
         <blockquote class="blockquote">
             <hr>
@@ -145,8 +154,8 @@
             <thead class="thead">
                 <h2>HORARIOS</h2>
 
-                <!--5) Classe contextuelle-->
-                <tr class="table-info">
+                <!--5) Classe contextuelle pour mettre en noir une ligne de la table-->
+                <tr class="table-dark">
                     <th></th>
                     <th>Mañanas</th>
                     <th>Tardes</th>
