@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(174, 121, 20);
+    font-weight: bold;
+}
+
+header {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.logo-1 {
+    width: 100px;
+}
+
+.navbar {
+    text-align: center;
+    font-size: 20px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel {
+    margin-bottom: 50px;
+}
+
+.carousel-caption {
+    background-color: rgba(43, 35, 3, 0.747);
+    border-radius: 5%;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+.blockquote {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.horarios {
+    margin-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+    .social-media {
+        justify-content: space-evenly;
+    }
+
+    div.logo-1 {
+        position: relative;
+        
+    }
+
+}
